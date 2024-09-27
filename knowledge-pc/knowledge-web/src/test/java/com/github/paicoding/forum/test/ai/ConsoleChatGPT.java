@@ -45,7 +45,7 @@ public class ConsoleChatGPT {
 
         System.out.println();
 //        System.out.println("Please enter APIKEY, press Enter twice to submit:");
-        String key = "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";
+        String key = "";
         check(key);
 
         String useProxy = "y";
