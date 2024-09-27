@@ -15,8 +15,8 @@ public class TestChatGPT {
         // Proxy proxy = Proxys.socks5("127.0.0.1", 1080);
 
         ChatGPT chatGPT = ChatGPT.builder()
-//                .apiKey("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")
-                .apiKey("sk-lY9w0kP59ZbKX_F5uIpYT3VwNSyKjKA_Ss3jI1lFWHT3BlbkFJXsgOVVisBxcM2LAOsDQOX16S5zE9GMT7Grz7Azww0A")
+//                .apiKey("")
+                .apiKey("")
                 .proxy(proxy)
                 .apiHost("https://api.openai.com/") //反向代理地址
                 .build()

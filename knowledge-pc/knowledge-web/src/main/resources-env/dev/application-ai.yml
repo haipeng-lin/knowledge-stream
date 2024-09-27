@@ -44,7 +44,6 @@ chatgpt:
     vip: 100
 
 
-
 # 讯飞AI
 xunfei:
   hostUrl: http://spark-api.xf-yun.com/v3.5/chat
