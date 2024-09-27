@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 /**
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/10/17
  */
 public class HuToolSnowflakeIdGenerator implements IdGenerator {

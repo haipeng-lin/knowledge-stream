@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * 文章列表视图
  *
- * @author YiHui
+ * @author haipeng-lin
  */
 @RequestMapping(path = "article")
 @Controller

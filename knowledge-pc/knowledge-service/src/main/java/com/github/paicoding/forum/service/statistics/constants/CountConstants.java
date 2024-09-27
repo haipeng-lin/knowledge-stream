@@ -3,8 +3,8 @@ package com.github.paicoding.forum.service.statistics.constants;
 /**
  * 用户相关的常量信息
  *
- * @author YiHui
- * @date 2023/8/25
+ * @author haipeng-lin
+ * @date 2024/8/25
  */
 public interface CountConstants {
 

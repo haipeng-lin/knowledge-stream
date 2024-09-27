@@ -13,7 +13,7 @@ public class OpenCVYasuoSingleFile {
         OpenCV.loadShared();
         String filename = docPath+"logo.png";
         System.out.println(DateUtil.formatDate(FileUtil.lastModifiedTime(filename)));
-        if ( FileUtil.lastModifiedTime(filename).after(DateUtil.parse("2022年05月17日"))) {
+        if ( FileUtil.lastModifiedTime(filename).after(DateUtil.parse("2024年05月17日"))) {
             System.out.println("要修改");
         }
 //        Mat sourceImage = Imgcodecs.imread(filename);

@@ -3,8 +3,8 @@ package com.github.paicoding.forum.api.model.enums;
 import lombok.Getter;
 
 /**
- * @author YiHui
- * @date 2022/9/3
+ * @author haipeng-lin
+ * @date 2024/9/3
  */
 @Getter
 public enum NotifyStatEnum {

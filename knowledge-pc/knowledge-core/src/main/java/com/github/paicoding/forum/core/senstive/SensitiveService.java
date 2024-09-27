@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * 敏感词服务类
  *
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/8/9
  */
 @Slf4j

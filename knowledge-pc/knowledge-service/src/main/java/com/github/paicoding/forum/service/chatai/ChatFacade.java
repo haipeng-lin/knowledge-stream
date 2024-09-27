@@ -27,8 +27,8 @@ import java.util.function.Consumer;
 /**
  * 聊天的门面类
  *
- * @author YiHui
- * @date 2023/6/9
+ * @author haipeng-lin
+ * @date 2024/6/9
  */
 @Slf4j
 @Service

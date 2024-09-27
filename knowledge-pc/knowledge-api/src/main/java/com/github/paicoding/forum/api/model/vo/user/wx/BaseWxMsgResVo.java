@@ -8,9 +8,9 @@ import lombok.Data;
  * 返回的数据结构体
  * <p>
  *
- * @author YiHui
+ * @author haipeng-lin
  * @link <a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Passive_user_reply_message.html"/>
- * @date 2022/6/20
+ * @date 2024/6/20
  */
 @Data
 @JacksonXmlRootElement(localName = "xml")

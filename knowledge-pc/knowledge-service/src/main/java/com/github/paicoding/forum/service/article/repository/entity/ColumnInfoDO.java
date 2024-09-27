@@ -10,8 +10,8 @@ import lombok.EqualsAndHashCode;
 import java.util.Date;
 
 /**
- * @author YiHui
- * @date 2022/9/14
+ * @author haipeng-lin
+ * @date 2024/9/14
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

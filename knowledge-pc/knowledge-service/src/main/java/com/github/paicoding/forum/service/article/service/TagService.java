@@ -7,8 +7,8 @@ import com.github.paicoding.forum.api.model.vo.article.dto.TagDTO;
 /**
  * 标签Service
  *
- * @author louzai
- * @date 2022-07-20
+ * @author haipeng-lin
+ * @date 2024-07-20
  */
 public interface TagService {
 

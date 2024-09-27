@@ -8,8 +8,8 @@ import java.util.List;
 /**
  * Banner前台接口
  *
- * @author louzai
- * @date 2022-07-24
+ * @author haipeng-lin
+ * @date 2024-07-24
  */
 public interface ConfigService {
 

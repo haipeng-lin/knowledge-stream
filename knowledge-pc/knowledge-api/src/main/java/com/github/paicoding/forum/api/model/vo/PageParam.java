@@ -6,8 +6,8 @@ import lombok.Data;
 /**
  * 数据库分页参数
  *
- * @author louzai
- * @date 2022-07-120
+ * @author haipeng-lin
+ * @date 2024-07-120
  */
 @Data
 public class PageParam {

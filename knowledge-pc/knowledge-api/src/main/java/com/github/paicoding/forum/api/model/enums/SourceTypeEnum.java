@@ -5,8 +5,8 @@ import lombok.Getter;
 /**
  * 文档来源枚举
  *
- * @author louzai
- * @since 2022/7/19
+ * @author haipeng-lin
+ * @since 2024/7/19
  */
 @Getter
 public enum SourceTypeEnum {

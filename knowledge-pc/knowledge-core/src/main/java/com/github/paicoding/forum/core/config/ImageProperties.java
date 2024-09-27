@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 /**
  * 图片配置文件
  *
- * @author LouZai
- * @since 2022/9/7
+ * @author haipeng-lin
+ * @since 2024/9/7
  */
 @Setter
 @Getter

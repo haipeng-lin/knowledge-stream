@@ -14,8 +14,8 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * @author YiHui
- * @date 2022/9/5
+ * @author haipeng-lin
+ * @date 2024/9/5
  */
 public class JsonUtil {
 

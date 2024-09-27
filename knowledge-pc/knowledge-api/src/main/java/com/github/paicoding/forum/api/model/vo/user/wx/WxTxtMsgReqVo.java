@@ -7,9 +7,9 @@ import lombok.Data;
 /**
  * 简单文本请求
  *
- * @author YiHui
+ * @author haipeng-lin
  * @link <a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Receiving_standard_messages.html"/>
- * @date 2022/6/20
+ * @date 2024/6/20
  */
 @Data
 @JacksonXmlRootElement(localName = "xml")

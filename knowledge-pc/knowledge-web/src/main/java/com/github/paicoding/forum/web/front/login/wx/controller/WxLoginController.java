@@ -20,8 +20,8 @@ import java.io.IOException;
 /**
  * 公众号登陆的长连接控制器
  *
- * @author louzai
- * @date : 2022/8/3 10:56
+ * @author haipeng-lin
+ * @date : 2024/8/3 10:56
  **/
 @Controller
 @Slf4j

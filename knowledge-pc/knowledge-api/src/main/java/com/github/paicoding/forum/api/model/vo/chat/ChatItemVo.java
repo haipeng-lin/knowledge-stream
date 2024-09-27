@@ -12,7 +12,7 @@ import java.util.UUID;
 /**
  * 一次qa的聊天记录
  *
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/6/9
  */
 @Data

@@ -6,8 +6,8 @@ import com.github.paicoding.forum.service.article.repository.entity.ReadCountDO;
 /**
  * 标签mapper接口
  *
- * @author louzai
- * @date 2022-07-18
+ * @author haipeng-lin
+ * @date 2024-07-18
  */
 public interface ReadCountMapper extends BaseMapper<ReadCountDO> {
 }

@@ -28,8 +28,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @author YiHui
- * @date 2023/2/13
+ * @author haipeng-lin
+ * @date 2024/2/13
  */
 @Slf4j
 @Service
@@ -163,7 +163,7 @@ public class SitemapServiceImpl implements SitemapService {
      * - visit_info_ip:
      * ---- pv: 用户访问的站点总次数
      * ---- path_pv: 用户访问的路径总次数
-     * - visit_info_20230822每日记录, 一天一条记录
+     * - visit_info_20240822每日记录, 一天一条记录
      * ---- pv: 12  # field = 月日_pv, pv的计数
      * ---- uv: 5   # field = 月日_uv, uv的计数
      * ---- pv_path: 2 # 资源的当前访问计数

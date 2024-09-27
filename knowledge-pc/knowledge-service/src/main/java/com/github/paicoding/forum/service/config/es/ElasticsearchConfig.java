@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Configuration;
  * es配置类
  *
  * @author ygl
- * @since 2023-05-25
+ * @since 2024-05-25
  **/
 @Slf4j
 @Data

@@ -3,8 +3,8 @@ package com.github.paicoding.forum.service.user.service;
 import com.github.paicoding.forum.api.model.vo.user.UserPwdLoginReq;
 
 /**
- * @author YiHui
- * @date 2022/8/15
+ * @author haipeng-lin
+ * @date 2024/8/15
  */
 public interface LoginService {
     String SESSION_KEY = "f-session";

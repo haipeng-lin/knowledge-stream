@@ -5,8 +5,8 @@ import lombok.Getter;
 /**
  * 发布状态枚举
  *
- * @author louzai
- * @since 2022/7/19
+ * @author haipeng-lin
+ * @since 2024/7/19
  */
 @Getter
 public enum PushStatusEnum {

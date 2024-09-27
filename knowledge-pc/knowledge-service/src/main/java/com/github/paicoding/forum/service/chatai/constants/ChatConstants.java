@@ -5,8 +5,8 @@ import com.github.paicoding.forum.api.model.enums.ai.AISourceEnum;
 import java.time.LocalDate;
 
 /**
- * @author YiHui
- * @date 2023/6/2
+ * @author haipeng-lin
+ * @date 2024/6/2
  */
 public final class ChatConstants {
     /**

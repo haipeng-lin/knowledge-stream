@@ -1,8 +1,8 @@
 package com.github.paicoding.forum.core.util;
 
 /**
- * @author YiHui
- * @date 2022/8/31
+ * @author haipeng-lin
+ * @date 2024/8/31
  */
 public class NumUtil {
 

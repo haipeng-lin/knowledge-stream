@@ -17,7 +17,7 @@ import java.util.function.BiFunction;
 /**
  * 配置变更注册
  *
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/6/26
  */
 @Slf4j

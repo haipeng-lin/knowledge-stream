@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 /**
  * 排行榜信息
  *
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/8/19
  */
 @Data

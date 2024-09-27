@@ -5,8 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @author YiHui
- * @date 2022/6/15
+ * @author haipeng-lin
+ * @date 2024/6/15
  */
 @Data
 @ConfigurationProperties(prefix = "view.site")

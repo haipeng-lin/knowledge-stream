@@ -8,8 +8,8 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 /**
- * @author YiHui
- * @date 2022/8/15
+ * @author haipeng-lin
+ * @date 2024/8/15
  */
 @Data
 @ApiModel("用户基础实体对象")

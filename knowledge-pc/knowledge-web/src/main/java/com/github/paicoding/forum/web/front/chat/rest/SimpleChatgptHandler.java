@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * 基础的websocket实现通讯的方式
  *
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/6/5
  */
 @Slf4j

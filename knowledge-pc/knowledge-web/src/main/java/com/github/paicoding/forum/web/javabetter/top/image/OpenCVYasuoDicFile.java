@@ -18,7 +18,7 @@ public class OpenCVYasuoDicFile {
 
     public static void main(String[] args) {
         OpenCV.loadShared();
-        Date lastYasuoDate = DateUtil.parse("2022年05月12日");
+        Date lastYasuoDate = DateUtil.parse("2024年05月12日");
         List<File> files = FileUtil.loopFiles(docPath);
         for (File file: files) {
             if (FileUtil.lastModifiedTime(file).before(lastYasuoDate)) {
@@ -33,7 +33,7 @@ public class OpenCVYasuoDicFile {
                 continue;
             }
             Mat sourceImage = Imgcodecs.imread(file.getAbsolutePath());
-            // 上次更新时间 2022年05月18日
+            // 上次更新时间 2024年05月18日
 
             String extName = FileUtil.extName(file);
             MatOfInt dstImageParam = null;

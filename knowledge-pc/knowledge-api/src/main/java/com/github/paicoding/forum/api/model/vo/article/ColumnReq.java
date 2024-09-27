@@ -7,8 +7,8 @@ import java.io.Serializable;
 /**
  * 保存Column请求参数
  *
- * @author LouZai
- * @date 2022/9/26
+ * @author haipeng-lin
+ * @date 2024/9/26
  */
 @Data
 public class ColumnReq implements Serializable {

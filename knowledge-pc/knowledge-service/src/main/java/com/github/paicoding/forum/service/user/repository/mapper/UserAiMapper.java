@@ -13,7 +13,7 @@ import java.util.List;
  * ai用户登录mapper接口
  *
  * @author ygl
- * @date 2022-07-18
+ * @date 2024-07-18
  */
 public interface UserAiMapper extends BaseMapper<UserAiDO> {
 

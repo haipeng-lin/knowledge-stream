@@ -6,8 +6,8 @@ import com.github.paicoding.forum.api.model.vo.user.dto.ColumnFootCountDTO;
 import lombok.Data;
 
 /**
- * @author YiHui
- * @date 2022/9/14
+ * @author haipeng-lin
+ * @date 2024/9/14
  */
 @Data
 public class ColumnDTO {

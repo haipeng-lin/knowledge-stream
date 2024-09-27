@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * @author YiHui
+ * @author haipeng-lin
  * @date 2023/3/25
  */
 @WebServlet(urlPatterns = "/check")

@@ -1,8 +1,8 @@
 package com.github.paicoding.forum.core.permission;
 
 /**
- * @author YiHui
- * @date 2022/8/25
+ * @author haipeng-lin
+ * @date 2024/8/25
  */
 public enum UserRole {
     /**

@@ -9,8 +9,8 @@ import java.io.Serializable;
 /**
  * 基本用户信息
  *
- * @author YiHui
- * @date 2022/9/26
+ * @author haipeng-lin
+ * @date 2024/9/26
  */
 @Data
 @Accessors(chain = true)
