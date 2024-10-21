@@ -90,7 +90,7 @@ public abstract class AbsChatService implements ChatService {
             aiSource = source();
         }
         List<ChatItemVo> chats = RedisClient.lRange(ChatConstants.getAiHistoryRecordsKey(aiSource, user), 0, 50, ChatItemVo.class);
-        chats.add(0, new ChatItemVo().initAnswer(String.format("开始你和派聪明(%s-大模型)的AI之旅吧!", aiSource.getName())));
+        chats.add(0, new ChatItemVo().initAnswer(String.format("开始你和知识AI(%s-大模型)的AI之旅吧!", aiSource.getName())));
         ChatRecordsVo vo = new ChatRecordsVo();
         vo.setMaxCnt(getMaxQaCnt(user));
         vo.setUsedCnt(queryUserdCnt(user));
@@ -185,7 +185,7 @@ public abstract class AbsChatService implements ChatService {
     }
 
     /**
-     * 异步聊天，即提问并不要求直接得到接口；等后台准备完毕之后再写入对应的结果
+     * 异步聊天
      *
      * @param user
      * @param question
@@ -196,17 +196,18 @@ public abstract class AbsChatService implements ChatService {
     public ChatRecordsVo asyncChat(Long user, String question, Consumer<ChatRecordsVo> consumer) {
         ChatRecordsVo res = initResVo(user, question);
         if (!res.hasQaCnt()) {
-            // 次数使用完毕
+            // 1、次数使用完毕
             consumer.accept(res);
             return res;
         }
 
-        List<String> sensitiveWord = sensitiveService.contains(res.getRecords().get(0).getQuestion());
+        List<String> sensitiveWord = sensitiveService
+                .contains(res.getRecords().get(0).getQuestion());
         if (!CollectionUtils.isEmpty(sensitiveWord)) {
-            // 包含敏感词的提问，直接返回异常
             res.getRecords().get(0).initAnswer(String.format(ChatConstants.SENSITIVE_QUESTION, sensitiveWord));
             consumer.accept(res);
         } else {
+
             final ChatRecordsVo newRes = res.clone();
             AiChatStatEnum needReturn = doAsyncAnswer(user, newRes, (ans, vo) -> {
                 if (ans == AiChatStatEnum.END) {

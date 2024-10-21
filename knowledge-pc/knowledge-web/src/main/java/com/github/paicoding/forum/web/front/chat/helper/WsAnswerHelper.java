@@ -15,11 +15,14 @@ import java.util.Map;
 
 /**
  * @author haipeng-lin
- * @date 2023/6/9
+ *
+ * 管理 WebSocket 消息的发送与接收，提供与用户的实时聊天功能
+ *
  */
 @Slf4j
 @Component
 public class WsAnswerHelper {
+
     public static final String AI_SOURCE_PARAM = "AI";
 
     @Autowired
@@ -33,6 +36,12 @@ public class WsAnswerHelper {
         log.info("AI直接返回：{}", res);
     }
 
+    /**
+     * 根据AI类型，调API，发送消息给用户
+     * @param ai
+     * @param session
+     * @param question
+     */
     public void sendMsgToUser(AISourceEnum ai, String session, String question) {
         if (ai == null) {
             // 自动选择AI类型

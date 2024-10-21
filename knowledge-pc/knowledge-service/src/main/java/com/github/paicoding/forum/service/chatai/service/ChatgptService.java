@@ -2,7 +2,7 @@ package com.github.paicoding.forum.service.chatai.service;
 
 /**
  * @author haipeng-lin
- * @date 2024/6/2
+ *
  */
 public interface ChatgptService {
 

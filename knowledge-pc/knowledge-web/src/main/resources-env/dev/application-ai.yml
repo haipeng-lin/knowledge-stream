@@ -7,12 +7,12 @@ net:
 
 ai:
   maxNum:
-    basic: 5 # 默认兜底策略
-    wechat: 1000 # 公众号用户
-    star: 100 # 星球用户
-    starTry: 30 # 星球用户
+    basic: 5
+    wechat: 100
+    star: 100 #
+    starTry: 30
     invited: 0.1 # 被邀请
-    inviteNum: 0.2 # 邀请人数执行策略
+    inviteNum: 0.2
     starNumber: 4000 # 目前为 4000
   source: # 支持的AI模型
     - CHAT_GPT_3_5
@@ -43,11 +43,21 @@ chatgpt:
     normal: 50
     vip: 100
 
+# 阿里通义千问
+ali:
+  apiKey: sk-cd1b6c8c18d64c52b88c51114346fbb0
+  model: qwen-plus
 
-# 讯飞AI
+# 讯飞星火
 xunfei:
   hostUrl: http://spark-api.xf-yun.com/v3.5/chat
   domain: "generalv3"
-  appId:
-  apiKey:
-  apiSecret:
+  appId: 8ed64cca
+  apiKey: 1cb78fcabb96b0ef42ae30e8610e67af
+  apiSecret: NTQ1NDk0MWE1Y2M4ZjllYTY5MDRjOGY3
+
+# 智谱AI
+zhipu:
+  requestIdTemplate: "request-id-%s"
+  apiSecretKey: 8da41764e5217902602d534c6ebb300a.IJP7jopkUehKUvEm
+  model: glm-4

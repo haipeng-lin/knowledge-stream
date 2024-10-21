@@ -9,12 +9,12 @@ import java.util.Map;
 
 /**
  * @author haipeng-lin
- * @date 2024/7/2
+ * @Description 选择策略的上下文
  */
 @Component
 public class ChatServiceFactory {
-    private final Map<AISourceEnum, ChatService> chatServiceMap;
 
+    private final Map<AISourceEnum, ChatService> chatServiceMap;
 
     public ChatServiceFactory(List<ChatService> chatServiceList) {
         chatServiceMap = Maps.newHashMapWithExpectedSize(chatServiceList.size());

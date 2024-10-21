@@ -20,14 +20,13 @@ import java.util.Map;
  * 握手拦截器, 用于身份验证识别
  *
  * @author haipeng-lin
- * @date 2023/6/8
+ *
  */
 @Slf4j
 public class AuthHandshakeInterceptor extends HttpSessionHandshakeInterceptor {
 
     /**
      * 握手前，进行用户身份校验识别
-     *
      * @param request
      * @param response
      * @param wsHandler

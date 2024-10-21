@@ -19,7 +19,7 @@ import java.util.Map;
  * 基础的websocket实现通讯的方式
  *
  * @author haipeng-lin
- * @date 2023/6/5
+ *
  */
 @Slf4j
 public class SimpleChatgptHandler extends TextWebSocketHandler {
@@ -39,7 +39,7 @@ public class SimpleChatgptHandler extends TextWebSocketHandler {
 
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-        session.sendMessage(getTextMessage("开始你和派聪明的AI之旅吧", ChatSocketStateEnum.Established.getCode()));
+        session.sendMessage(getTextMessage("开始你和知识AI之旅吧", ChatSocketStateEnum.Established.getCode()));
     }
 
     @Override

@@ -215,11 +215,14 @@ public class ArticleReadServiceImpl implements ArticleReadService {
                     .collect(Collectors.toList());
         }
         // TODO ES整合
+        // SearchSourceBuilder：用于构建搜索请求
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        // 构建多字段匹配查询，搜索关键字会在文章标题和短标题中查找
         MultiMatchQueryBuilder multiMatchQueryBuilder = QueryBuilders.multiMatchQuery(key,
                 EsFieldConstant.ES_FIELD_TITLE,
                 EsFieldConstant.ES_FIELD_SHORT_TITLE);
         searchSourceBuilder.query(multiMatchQueryBuilder);
+
 
         SearchRequest searchRequest = new SearchRequest(new String[]{EsIndexConstant.ES_INDEX_ARTICLE},
                 searchSourceBuilder);
@@ -229,6 +232,9 @@ public class ArticleReadServiceImpl implements ArticleReadService {
         } catch (IOException e) {
             log.error("failed to query from es: key", e);
         }
+
+        // 获取查询结果的命中（SearchHits），并提取所有命中的文章（SearchHit数组）。
+        // 创建一个ids列表，收集所有匹配文章的ID
         SearchHits hits = searchResponse.getHits();
         SearchHit[] hitsList = hits.getHits();
         List<Integer> ids = new ArrayList<>();

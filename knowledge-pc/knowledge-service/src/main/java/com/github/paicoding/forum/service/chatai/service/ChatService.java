@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 
 /**
  * @author haipeng-lin
- * @date 2024/6/9
+ * @description 抽象策略接口，定义聊天相关方法
  */
 public interface ChatService {
 

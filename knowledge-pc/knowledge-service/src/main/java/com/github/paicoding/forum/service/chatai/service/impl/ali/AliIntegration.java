@@ -49,20 +49,23 @@ import java.util.function.BiConsumer;
 @Setter
 @Component
 public class AliIntegration {
+
     @Autowired
     private AliConfig config;
 
-    public void streamReturn(Long user, ChatRecordsVo chatRecord, BiConsumer<AiChatStatEnum, ChatRecordsVo> callback) {
+    public void streamReturn(Long user,
+                             ChatRecordsVo chatRecord,
+                             BiConsumer<AiChatStatEnum, ChatRecordsVo> callback) {
         try {
             ChatItemVo item = chatRecord.getRecords().get(0);
 
             Generation gen = new Generation();
             Message userMsg = Message.builder().role(Role.USER.getValue()).content(item.getQuestion()).build();
 
-            // 这里可以把历史信息也传进去，需要从数据库中获取，最好是从缓存中获取会比较好，还要考虑不能太多。
-
+            //
             GenerationParam param = GenerationParam.builder()
                     .model(config.getModel())
+                    .apiKey(config.getApiKey())
                     .messages(Arrays.asList(userMsg))
                     .resultFormat(GenerationParam.ResultFormat.MESSAGE)
                     .incrementalOutput(true)
@@ -108,6 +111,7 @@ public class AliIntegration {
     @Data
     public static class AliConfig {
         public String model;
+        public String apiKey;
     }
 
     public boolean directReturn(Long user, ChatItemVo chat) {
@@ -122,6 +126,7 @@ public class AliIntegration {
                 .build();
         GenerationParam param = GenerationParam.builder()
                 .model(config.getModel())
+                .apiKey(config.getApiKey())
                 .messages(Arrays.asList(systemMsg, userMsg))
                 .resultFormat(GenerationParam.ResultFormat.MESSAGE)
                 .build();

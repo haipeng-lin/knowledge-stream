@@ -2,7 +2,7 @@
 <html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <div th:replace="components/layout/header :: head(~{::title}, ~{}, ~{})">
     <title th:text="${global.siteInfo.websiteName}">
-        派聪明 | 技术派
+        知识AI
     </title>
 </div>
 
@@ -30,33 +30,21 @@
                         </div>
                         <div class="chat-annotation" th:if="${global.user != null}">
                             <div th:switch="${global.user.starStatus.code}">
-<!--                                <a th:case="-1"-->
-<!--                                   href="#"-->
-<!--                                  class="annotation"-->
-<!--                                  data-target="#registerModal"-->
-<!--                                  data-toggle="modal"-->
-<!--                                >绑定二哥编程星球，提升每天对话次数</a>-->
-<!--                                <span th:case="0" class="annotation">审核中</span>-->
-<!--                                <span th:case="1" class="annotation">试用中，添加管理员微信 催审核</span>-->
-<!--                                <div class="c-bubble-trigger com-verification" th:case="2">-->
-<!--                                    <i class="verified"></i>-->
-<!--                                </div>-->
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="window-header-sub-title">与派聪明的 <span id="chatCnt">0</span> 条对话
-                        <span class="info">以天为单位，无限期重置）</span></div>
+                    <div class="window-header-sub-title">与知识AI的 <span id="chatCnt">0</span> 条对话
+                        <span class="info"></span></div>
                 </div>
-                <!-- 加一个下拉框，选项是 OpenAI 讯飞星火 技术派 -->
+                <!-- 加一个下拉框  -->
                 <div class="chat-type">
                     <select class="styled-dropdown" id="chat-type">
-                        <option value="CHAT_GPT_3_5">OpenAI</option>
                         <option value="ALI_AI" selected>通义千问</option>
                         <option value="XUN_FEI_AI">讯飞星火</option>
-                        <option value="ZHI_PU_AI">GLM-4-Flash</option>
-                        <option value="PAI_AI">技术派</option>
+                        <option value="ZHI_PU_AI">智谱AI</option>
+
                     </select>
                 </div>
             </div>

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.function.BiConsumer;
 
 /**
- * 技术派价值一个亿的AI
+ *
  *
  * @author haipeng-lin
  * @date 2024/6/9
