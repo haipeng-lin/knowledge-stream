@@ -1,7 +1,7 @@
 ## 一、关于知识流
 
 
-&emsp;&emsp;一个面向互联网技术人员的知识交流平台，分为PC端和管理后台，帮助开发者快速成长。项目使用 Spring Boot、MyBatis-Plus、MySQL、Redis、ElasticSearch、MongoDB、Docker、RabbitMQ 等技术栈实现，采用主流的互联网技术架构，拥有完整的文章/教程发布、点赞收藏、评论、统计数据流程。
+&emsp;&emsp;一个面向互联网技术人员的知识交流平台，分为PC端和管理后台，帮助开发者快速成长。项目使用 Spring Boot、MyBatis-Plus、MySQL、Redis、ElasticSearch、MongoDB、Docker、RabbitMQ 等技术栈实现，采用主流的互联网技术架构，拥有完整的文章/教程发布、点赞收藏、评论、统计数据流程
 
 ## 二、架构功能图
 
